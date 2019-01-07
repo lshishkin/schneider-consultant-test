@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic");
+/*font-family: 'Open Sans', sans-serif;*/
+
+/* default css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+footer {
+  margin-top: auto;
+  box-sizing: border-box;
+}
+/*end default css*/
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.material-icons {
+  color: #ffffff !important;
+}
+
+header {
+  background: #dcdcdc;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px 0;
+    flex-wrap: wrap;
+  }
+  .logo {
+    height: 100px;
+    width: 320px;
+  }
+  .sale {
+    font-size: 17px;
+    font-family: "OpenSans";
+    color: rgb(119, 119, 119);
+    font-weight: normal;
+    padding-top: 25px;
+  }
+  .phone {
+    font-size: 31px;
+    font-family: "OpenSans";
+    color: rgb(118, 118, 118);
+    font-weight: bold;
+  }
+}
+/*menu*/
+
+.menu {
+  background: #777777;
+  padding: 18px 0;
+  .toogleMenu {
+    display: none;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  li {
+    padding: 0 15px;
+    border-right: 1px solid #ffffff;
+  }
+  li:last-child {
+    border: none;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+/*slider*/
+
+.slider {
+  background-image: url(https://uploads.codesandbox.io/uploads/user/c83d422d-9513-48cd-a1e1-ea75cd6f1273/E1vY-schneider-consult-test.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    min-height: 404px;
+    color: #777777;
+    text-align: center;
+    h3 {
+      margin-top: 40px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 40px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      font-size: 40px;
+      z-index: 10;
+    }
+  }
+}
+
+.content {
+  background: #ffffff;
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 10px 195px 10px;
+    justify-content: space-between;
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      background: #777777;
+      color: #ffffff;
+      box-sizing: border-box;
+      /*max-width: 350px;*/
+      flex-basis: 350px;
+      padding: 22px 55px 32px 34px;
+      h3 {
+        font-size: 40px;
+
+        font-weight: bold;
+      }
+
+      article {
+        margin-top: 38px;
+      }
+      .aside_footer {
+        text-align: right;
+        margin-top: auto;
+        a {
+          color: #ffffff;
+
+          text-decoration: underline;
+        }
+      }
+    }
+    main {
+      /*max-width: 570px;*/
+      flex-basis: 570px;
+      color: #767676;
+      h3 {
+        padding-top: 22px;
+        font-size: 24px;
+        width: 100%;
+        font-weight: normal;
+      }
+      h4 {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .about {
+        h3 {
+          padding-top: 22px;
+        }
+        p {
+          padding-top: 33px;
+        }
+      }
+      .whatdo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .whatdo-item {
+          /*max-width: 270px;*/
+          flex-basis: 270px;
+          h4 {
+            padding-top: 40px;
+          }
+          p {
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background: #767676;
+  color:#ffffff;
+    font-size:14px;
+  font-weight:normal;
+  line-height: 1.571;
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin:0 auto;
+    .copyright{
+      flex-basis:350px;
+        padding:50px 0;
+     
+    }
+    .footer-nav{
+      flex-basis:220px;
+      padding:50px 0 ;
+      a{
+        color:#ffffff;
+      }
+    }
+    .company{
+      padding:50px 0 ;
+      margin-left:auto;
+      flex-basis:230px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  header .phone {
+    font-size: 18px;
+  }
+  .menu {
+    position: relative;
+  }
+  .menu .toogleMenu {
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  .menu ul {
+    display: none;
+    position: absolute;
+    background: #777777;
+    z-index: 5;
+  }
+}
